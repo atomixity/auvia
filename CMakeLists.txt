@@ -7,22 +7,22 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # include headers
 include_directories(
-    src
+    auvia
 )
 
 # static library: auvia
 set(AUVIA_SOURCES
-    src/libs/asm.h
-    src/libs/device.h
-    src/libs/trap.h
-    src/libs/type.h
+    auvia/libs/asm.h
+    auvia/libs/device.h
+    auvia/libs/trap.h
+    auvia/libs/type.h
 
-    src/modules/bus/matu.h
-    src/modules/memory/bank.h
-    src/modules/storage/flash.h
+    auvia/modules/bus/matu.h
+    auvia/modules/memory/bank.h
+    auvia/modules/storage/flash.h
 )
 set(AUVIA_CPP_SOURCES
-    src/modules/bus/matu.cc
+    auvia/modules/bus/matu.cc
 )
 add_library(auvia STATIC ${AUVIA_CPP_SOURCES})
 
