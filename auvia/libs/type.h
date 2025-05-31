@@ -33,7 +33,14 @@ typedef uint32_t    u32;
 typedef size_t      usize;
 typedef ssize_t     ssize;
 
-typedef uint32_t    addr_t;
+#if !defined(addr_t)
+/**
+ * @brief Represents vMCU address space.
+ *
+ * Note: default is uint32_t, but platform independent.
+ */
+#define addr_t      uint32_t
+#endif
 typedef uintptr_t   phys_t;
 
 
