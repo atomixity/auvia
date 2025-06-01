@@ -24,7 +24,7 @@
 #include <libs/device.h>
 #include <libs/trap.h>
 
-namespace bus {
+namespace auvia::bus {
 
 class matu
 {
@@ -50,4 +50,4 @@ private:
     dev_tuple_t mDevs[device::NR_TYPES];
 }; // class mtu
 
-} // namespace bus
+} // namespace auvia::bus

@@ -21,7 +21,7 @@
 #include <libs/type.h>
 #include <libs/device.h>
 
-namespace storage {
+namespace auvia::storage {
 
 class flash final : public device
 {
@@ -54,5 +54,4 @@ public:
 private:
     u8*     mMemory;
 };
-
-} // namespace storage
+} // namespace auvia::storage

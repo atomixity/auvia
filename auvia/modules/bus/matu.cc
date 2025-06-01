@@ -18,7 +18,7 @@
 
 #include "matu.h"
 
-namespace bus {
+namespace auvia::bus {
 
 matu::~matu()
 {
@@ -114,5 +114,4 @@ Variant matu::translate(addr_t va)
 
     return (*dev)[va];
 }
-
-} // namespace bus
+} // namespace auvia::bus

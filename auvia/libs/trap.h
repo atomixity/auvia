@@ -23,6 +23,8 @@
 #include <libs/asm.h>
 #include <libs/type.h>
 
+namespace auvia {
+
 struct trap
 {
 public:
@@ -60,6 +62,7 @@ public:
         }
     }
 };
+} // namespace auvia
 
 #define panic(fmt, ...)                             \
     do {                                            \

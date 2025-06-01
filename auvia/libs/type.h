@@ -43,6 +43,7 @@ typedef ssize_t     ssize;
 #endif
 typedef uintptr_t   phys_t;
 
+namespace auvia {
 
 /**
  * @brief high-performance flexible Variant type.
@@ -100,4 +101,5 @@ private:
     /* issue if this fails at compile-time */
     Variant() : pa(BUILD_BUG_ON(sizeof(Variant) % sizeof(void*))) { }
 }; // struct Variant
+} // namespace auvia
     

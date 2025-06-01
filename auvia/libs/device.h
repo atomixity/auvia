@@ -23,6 +23,8 @@
 #include <libs/asm.h>
 #include <libs/type.h>
 
+namespace auvia {
+
 class device
 {
 public:
@@ -81,3 +83,4 @@ private:
     usize       mType;
     mmio_range  mAddrRange;
 };
+} // namespace auvia

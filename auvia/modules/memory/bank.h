@@ -21,7 +21,7 @@
 #include <libs/type.h>
 #include <libs/device.h>
 
-namespace memory {
+namespace auvia::memory {
 
 class bank final : public device
 {
@@ -54,5 +54,4 @@ public:
 private:
     u8*     mMemory;
 };
-
-} // namespace memory
+} // namespace auvia::memory
