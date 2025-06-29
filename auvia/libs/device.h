@@ -30,7 +30,8 @@ class device
 public:
     enum kind {
         UNKNOWN = 0,
-        CPU,
+        MCU,
+        CPU = MCU,
         MEMORY,
         STORAGE,
         IODEV,
